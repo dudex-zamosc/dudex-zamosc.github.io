@@ -10,15 +10,15 @@ nav:
 
 # Hero
 hero:
-  title: "Professional Carpentry Services"
-  subtitle: "Stairs, hardwood floors, sanding and varnishing"
+  title: "Professional Carpentry Services Since 1981"
+  subtitle: "Parquet, hardwood floors, wooden stairs — tradition and quality for two generations"
   cta: "View our projects"
   cta_url: "/en/projects/"
 
 # About
 about:
   title: "About Us"
-  description: "DudeX Parkiety is a company with many years of experience in the carpentry industry. We specialize in the production and installation of wooden stairs and floors. Every project is treated individually, ensuring the highest quality of workmanship and customer satisfaction."
+  description: "Dudex has been operating in the carpentry industry since 1981. The company was founded by Mieczysław Dudek — we are now continuing the business in the second generation. From the very beginning, we have been producing parquet, floors and stairs. We owe our long presence on the market to our good reputation and commitment to the quality of our services. Our clients often return to us, entrusting us with new projects."
   experience: "Years of experience"
   projects_done: "Completed projects"
   satisfaction: "Satisfied customers"
@@ -26,44 +26,44 @@ about:
 # Services
 services:
   title: "Our Services"
-  subtitle: "We offer comprehensive carpentry services"
+  subtitle: "We serve individual clients and collaborate with architects and interior designers"
   floors:
-    title: "Hardwood Floors"
-    description: "Installation of hardwood floors using the highest quality materials. Parquet, engineered wood, solid wood — we'll select the optimal solution for your interior."
+    title: "Parquet & Floors"
+    description: "We produce decorative and traditional parquet using exotic and traditional Polish wood species. We manufacture floorboards and undertake restoration of old, historic floors and parquet."
   stairs:
     title: "Wooden Stairs"
-    description: "We design and build custom wooden stairs. Straight, spiral, winder — every project is executed with attention to every detail."
+    description: "We build structural wooden stairs as well as concrete stairs clad in wood. Every project is custom-made with attention to every detail."
   sanding:
     title: "Floor Sanding"
-    description: "Professional sanding of hardwood floors and parquet. We restore the shine to old floors using modern dust-free equipment."
+    description: "Professional sanding of hardwood floors and parquet. We restore the shine to old floors using modern equipment."
     url: "/en/services/floor-sanding/"
   varnishing:
-    title: "Varnishing"
-    description: "Varnishing and oiling of hardwood floors. We use top-quality products that provide lasting protection and a beautiful appearance."
+    title: "Varnishing & Oiling"
+    description: "Floor varnishing and oiling services. We use top-quality products that provide lasting protection and a beautiful appearance."
     url: "/en/services/varnishing/"
 
 # Why us
 why_us:
-  title: "Why Choose Us?"
-  subtitle: "Choose DudeX Parkiety for guaranteed professional execution"
+  title: "Why Choose Dudex?"
+  subtitle: "Over 40 years of experience and hundreds of satisfied customers"
   reasons:
-    - title: "Experience"
-      description: "Years of market presence and hundreds of completed projects guarantee quality and professionalism."
+    - title: "Over 40 Years of Tradition"
+      description: "Operating since 1981 — over four decades of experience in the carpentry and flooring industry."
       icon: "shield-check"
-    - title: "Quality Materials"
-      description: "We work exclusively with trusted wood suppliers, ensuring the highest quality materials."
+    - title: "Own Drying Facilities"
+      description: "We have our own wood drying kilns. Work can be done using client-supplied wood or our own materials."
       icon: "cube"
-    - title: "Individual Approach"
-      description: "Every project is treated individually, adapting to the needs and expectations of the client."
+    - title: "Second Generation"
+      description: "The company founded by Mieczysław Dudek continues in the second generation, combining tradition with modern solutions."
       icon: "user"
-    - title: "Punctuality"
-      description: "We meet agreed deadlines, respecting our clients' time."
+    - title: "Individual Approach"
+      description: "Every project is treated individually. We collaborate with architects and interior designers."
       icon: "clock"
-    - title: "Warranty"
-      description: "We provide a warranty on every project, giving confidence in the durability of our work."
+    - title: "Strong Reputation"
+      description: "Our clients often return, entrusting us with the execution of their next projects."
       icon: "document-check"
-    - title: "Free Estimate"
-      description: "We offer free estimates and consultation, helping you choose the optimal solution."
+    - title: "Fair Pricing"
+      description: "We offer excellent products at reasonable prices. Free estimates and material selection advice."
       icon: "calculator"
 
 # Recent projects
@@ -77,9 +77,10 @@ recent_projects:
 contact:
   title: "Contact"
   subtitle: "Get in touch with us"
-  phone: "+48 123 456 789"
-  email: "kontakt@dudex.pl"
-  address: "ul. Przykładowa 10, 00-001 Warsaw, Poland"
+  owner: "Bogdan Łasocha"
+  phone: "605 06 11 52"
+  email: "firma@dudex-zamosc.pl"
+  address: "ul. Hrubieszowska 91, 22-400 Zamość, Poland"
   form:
     name: "Full name"
     email: "Email address"
@@ -94,11 +95,11 @@ contact:
 
 # Footer
 footer:
-  description: "DudeX Parkiety — professional carpentry services. Stairs, floors, sanding and varnishing."
+  description: "Dudex — professional carpentry services since 1981. Parquet, floors, wooden stairs, sanding and varnishing."
   services_title: "Services"
   cities_title: "Cities We Serve"
   links_title: "Useful Links"
-  copyright: "DudeX Parkiety. All rights reserved."
+  copyright: "Dudex — Łasocha Bogdan. All rights reserved."
 
 # Projects page
 projects_page:

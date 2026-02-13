@@ -18,7 +18,7 @@ images:
     alt: "Schody dębowe — balustrada"
     width: 1200
     height: 800
-seo_title: "Schody dębowe w rezydencji — Realizacja DudeX Parkiety"
+seo_title: "Schody dębowe w rezydencji — Realizacja Dudex"
 seo_description: "Realizacja schodów dębowych zabiegowych w rezydencji w Warszawie. Zobacz zdjęcia i opis projektu."
 ---
 

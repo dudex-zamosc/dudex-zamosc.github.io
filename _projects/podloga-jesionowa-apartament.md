@@ -18,7 +18,7 @@ images:
     alt: "Podłoga jesionowa — perspektywa"
     width: 1200
     height: 800
-seo_title: "Podłoga jesionowa w apartamencie — Realizacja DudeX Parkiety"
+seo_title: "Podłoga jesionowa w apartamencie — Realizacja Dudex"
 seo_description: "Montaż podłogi jesionowej w apartamencie w Krakowie. Deska lita olejowana — zdjęcia i opis projektu."
 ---
 

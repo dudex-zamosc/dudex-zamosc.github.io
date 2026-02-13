@@ -14,7 +14,8 @@
       "Bash(find:*)",
       "Bash(test:*)",
       "Bash(JEKYLL_ENV=production bundle exec jekyll build:*)",
-      "WebFetch(domain:dudex-zamosc.pl)"
+      "WebFetch(domain:dudex-zamosc.pl)",
+      "Bash(npm run build:*)"
     ]
   }
 }

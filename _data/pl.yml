@@ -10,60 +10,60 @@ nav:
 
 # Hero
 hero:
-  title: "Profesjonalne usługi parkieciarskie"
-  subtitle: "Schody, podłogi drewniane, cyklinowanie i lakierowanie"
+  title: "Profesjonalne usługi stolarskie od 1981 roku"
+  subtitle: "Parkiety, podłogi drewniane, schody — tradycja i jakość w drugim pokoleniu"
   cta: "Zobacz nasze realizacje"
   cta_url: "/projekty/"
 
 # About
 about:
-  title: "O nas"
-  description: "DudeX Parkiety to firma z wieloletnim doświadczeniem w branży parkieciarskiej. Specjalizujemy się w produkcji i montażu schodów drewnianych oraz podłóg. Każde zlecenie traktujemy indywidualnie, dbając o najwyższą jakość wykonania i zadowolenie klienta."
-  experience: "Lata doświadczenia"
+  title: "O firmie"
+  description: "Firma Dudex działa w branży stolarskiej od 1981 roku. Założycielem firmy był Mieczysław Dudek — obecnie kontynuujemy działalność w drugim pokoleniu. Od początku zajmujemy się produkcją parkietów, podłóg i schodów. Długi okres działalności zawdzięczamy dobrej renomie na rynku i dbałości o poziom wykonywanych usług. Nasi zleceniodawcy niejednokrotnie powracają do nas, powierzając nam realizację nowych projektów."
+  experience: "Lat doświadczenia"
   projects_done: "Zrealizowanych projektów"
   satisfaction: "Zadowolonych klientów"
 
 # Services
 services:
   title: "Nasze usługi"
-  subtitle: "Oferujemy kompleksowe usługi parkieciarskie"
+  subtitle: "Realizujemy zamówienia klientów indywidualnych oraz współpracujemy z architektami i dekoratorami wnętrz"
   floors:
-    title: "Podłogi drewniane"
-    description: "Montaż podłóg drewnianych z najwyższej jakości materiałów. Parkiet, deska barlinecka, deska warstwowa — dobierzemy optymalne rozwiązanie do Twojego wnętrza."
+    title: "Parkiety i podłogi"
+    description: "Wykonujemy parkiety ozdobne i tradycyjne z elementami drewna egzotycznego i tradycyjnych polskich gatunków drzew. Produkujemy deski podłogowe. Podejmujemy się renowacji starych zabytkowych podłóg i parkietów."
   stairs:
     title: "Schody drewniane"
-    description: "Projektujemy i wykonujemy schody drewniane na wymiar. Schody proste, kręcone, zabiegowe — każdy projekt realizujemy z dbałością o każdy detal."
+    description: "Wykonujemy schody drewniane konstrukcyjne oraz betonowe obłożone drewnem. Każdy projekt realizujemy na wymiar z dbałością o każdy detal."
   sanding:
     title: "Cyklinowanie podłóg"
-    description: "Profesjonalne cyklinowanie podłóg drewnianych i parkietów. Przywracamy blask starym podłogom, stosując nowoczesny sprzęt bezpyłowy."
+    description: "Profesjonalne szlifowanie i cyklinowanie podłóg drewnianych oraz parkietów. Przywracamy blask starym podłogom, stosując nowoczesny sprzęt."
     url: "/uslugi/cyklinowanie-podlog/"
   varnishing:
-    title: "Lakierowanie"
-    description: "Lakierowanie i olejowanie podłóg drewnianych. Stosujemy produkty najwyższej jakości, które zapewniają trwałą ochronę i piękny wygląd."
+    title: "Lakierowanie i olejowanie"
+    description: "Usługi lakierowania oraz olejowania podłóg drewnianych. Stosujemy produkty najwyższej jakości, zapewniające trwałą ochronę i piękny wygląd."
     url: "/uslugi/lakierowanie/"
 
 # Why us
 why_us:
-  title: "Dlaczego my?"
-  subtitle: "Wybierz DudeX Parkiety i zyskaj pewność profesjonalnej realizacji"
+  title: "Dlaczego Dudex?"
+  subtitle: "Ponad 40 lat doświadczenia i setki zadowolonych klientów"
   reasons:
-    - title: "Doświadczenie"
-      description: "Wieloletnia obecność na rynku i setki zrealizowanych projektów to gwarancja jakości i profesjonalizmu."
+    - title: "Ponad 40 lat tradycji"
+      description: "Działamy od 1981 roku — to ponad cztery dekady doświadczenia w branży stolarskiej i parkieciarskiej."
       icon: "shield-check"
-    - title: "Jakość materiałów"
-      description: "Współpracujemy wyłącznie ze sprawdzonymi dostawcami drewna, zapewniając najwyższą jakość materiałów."
+    - title: "Własne suszarnie"
+      description: "Posiadamy własne suszarnie drewna. Prace mogą być realizowane z drewna powierzonego, jak również z naszego materiału."
       icon: "cube"
-    - title: "Indywidualne podejście"
-      description: "Każdy projekt traktujemy indywidualnie, dostosowując się do potrzeb i oczekiwań klienta."
+    - title: "Drugie pokolenie"
+      description: "Firma założona przez Mieczysława Dudka jest kontynuowana w drugim pokoleniu, łącząc tradycję z nowoczesnymi rozwiązaniami."
       icon: "user"
-    - title: "Terminowość"
-      description: "Dotrzymujemy ustalonych terminów, szanując czas naszych klientów."
+    - title: "Indywidualne podejście"
+      description: "Każdy projekt traktujemy indywidualnie. Współpracujemy z architektami i dekoratorami wnętrz przy aranżacji."
       icon: "clock"
-    - title: "Gwarancja"
-      description: "Na każdą naszą realizację udzielamy gwarancji, dając pewność trwałości wykonanej pracy."
+    - title: "Dobra renoma"
+      description: "Nasi zleceniodawcy niejednokrotnie powracają do nas, powierzając realizację kolejnych projektów."
       icon: "document-check"
-    - title: "Bezpłatna wycena"
-      description: "Oferujemy bezpłatną wycenę i doradztwo, pomagając dobrać optymalne rozwiązanie."
+    - title: "Uczciwa cena"
+      description: "Oferujemy bardzo dobry towar w rozsądnej cenie. Bezpłatna wycena i doradztwo w zakresie doboru materiałów."
       icon: "calculator"
 
 # Recent projects
@@ -77,9 +77,10 @@ recent_projects:
 contact:
   title: "Kontakt"
   subtitle: "Skontaktuj się z nami"
-  phone: "+48 123 456 789"
-  email: "kontakt@dudex.pl"
-  address: "ul. Przykładowa 10, 00-001 Warszawa"
+  owner: "Bogdan Łasocha"
+  phone: "605 06 11 52"
+  email: "firma@dudex-zamosc.pl"
+  address: "ul. Hrubieszowska 91, 22-400 Zamość"
   form:
     name: "Imię i nazwisko"
     email: "Adres e-mail"
@@ -94,11 +95,11 @@ contact:
 
 # Footer
 footer:
-  description: "DudeX Parkiety — profesjonalne usługi parkieciarskie. Schody, podłogi, cyklinowanie i lakierowanie."
+  description: "Dudex — profesjonalne usługi stolarskie od 1981 roku. Parkiety, podłogi, schody drewniane, cyklinowanie i lakierowanie."
   services_title: "Usługi"
   cities_title: "Obsługujemy miasta"
   links_title: "Przydatne linki"
-  copyright: "DudeX Parkiety. Wszelkie prawa zastrzeżone."
+  copyright: "Dudex — Łasocha Bogdan. Wszelkie prawa zastrzeżone."
 
 # Projects page
 projects_page:

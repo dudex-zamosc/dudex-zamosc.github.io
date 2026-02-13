@@ -1,10 +1,18 @@
-# DudeX Parkiety — Jekyll Website
+# Dudex — Łasocha Bogdan — Jekyll Website
 
 ## Project Overview
-A production website for DudeX Parkiety — a local carpentry shop specializing in hardwood floors and wooden stairs. Built with Jekyll and Tailwind CSS v4, hosted on Netlify.
+A production website for **Dudex — Łasocha Bogdan**, a family carpentry business based in Zamość, Poland. Founded in 1981 by Mieczysław Dudek, now run by second-generation owner Bogdan Łasocha. Specializes in hardwood floors, wooden stairs, floor sanding (cyklinowanie), and varnishing (lakierowanie). Built with Jekyll and Tailwind CSS v4, hosted on Netlify.
+
+## Company Details
+- **Owner**: Bogdan Łasocha
+- **Founder**: Mieczysław Dudek (est. 1981)
+- **Address**: ul. Hrubieszowska 91, 22-400 Zamość
+- **Phone**: 605 06 11 52
+- **Email**: firma@dudex-zamosc.pl
+- **Website**: dudex-zamosc.pl
 
 ## Tech Stack
-- **Static Site Generator**: Jekyll 4.3
+- **Static Site Generator**: Jekyll 4.4
 - **CSS Framework**: Tailwind CSS v4 (using `@tailwindcss/cli`)
 - **Gallery**: PhotoSwipe Lightbox 5
 - **Hosting**: Netlify
