@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data[current_lang] %}
+
+<article class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+      <ol class="flex items-center space-x-2">
+        <li><a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="hover:text-brand-600">{{ t.nav.home }}</a></li>
+        <li><span class="mx-1">/</span></li>
+        <li><a href="{% if page.lang == 'en' %}/en/projects/{% else %}/projekty/{% endif %}" class="hover:text-brand-600">{{ t.nav.projects }}</a></li>
+        <li><span class="mx-1">/</span></li>
+        <li class="text-gray-800 font-medium">{{ page.title }}</li>
+      </ol>
+    </nav>
+
+    <!-- Title and date -->
+    <header class="mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{{ page.title }}</h1>
+      {% if page.date %}
+      <time class="text-gray-500" datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d.%m.%Y" }}
+      </time>
+      {% endif %}
+      {% if page.location %}
+      <span class="text-gray-400 mx-2">•</span>
+      <span class="text-gray-500">{{ page.location }}</span>
+      {% endif %}
+    </header>
+
+    <!-- Gallery -->
+    {% if page.images %}
+    <div class="gallery-grid mb-12" id="project-gallery">
+      {% for image in page.images %}
+      <a href="{{ image.url }}"
+         data-pswp-width="{{ image.width | default: 1200 }}"
+         data-pswp-height="{{ image.height | default: 800 }}"
+         target="_blank"
+         rel="noreferrer">
+        <img src="{{ image.url }}" alt="{{ image.alt | default: page.title }}" loading="lazy" class="rounded-lg">
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Content -->
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline">
+      {{ content }}
+    </div>
+
+    <!-- Back link -->
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <a href="{% if page.lang == 'en' %}/en/projects/{% else %}/projekty/{% endif %}" class="inline-flex items-center text-brand-600 hover:text-brand-700 font-medium">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        {% if page.lang == 'en' %}Back to all projects{% else %}Wróć do wszystkich realizacji{% endif %}
+      </a>
+    </div>
+  </div>
+</article>
+
+<!-- JSON-LD for project -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | escape }}",
+  {% if page.thumbnail %}"image": "{{ page.thumbnail | absolute_url }}",{% endif %}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}"
+  }
+}
+</script>

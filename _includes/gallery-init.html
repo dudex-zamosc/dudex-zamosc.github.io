@@ -1,0 +1,14 @@
+<script type="module">
+  import PhotoSwipeLightbox from '/assets/js/photoswipe-lightbox.esm.min.js';
+  import PhotoSwipe from '/assets/js/photoswipe.esm.min.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#project-gallery',
+    children: 'a',
+    pswpModule: PhotoSwipe,
+    bgOpacity: 0.9,
+    padding: { top: 20, bottom: 20, left: 20, right: 20 },
+  });
+
+  lightbox.init();
+</script>

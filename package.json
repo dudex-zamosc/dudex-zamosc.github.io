@@ -1,0 +1,18 @@
+{
+  "name": "dudex-carpenter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --watch",
+    "dev": "npm run watch:css & bundle exec jekyll serve --livereload",
+    "build": "npm run build:css && JEKYLL_ENV=production bundle exec jekyll build"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "photoswipe": "^5.4.0"
+  }
+}

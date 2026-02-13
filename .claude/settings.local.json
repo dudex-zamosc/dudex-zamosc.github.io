@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(jekyll:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(rbenv versions:*)",
+      "Bash(ruby:*)",
+      "Bash(gem install:*)",
+      "Bash(npm install:*)",
+      "Bash(bundle install:*)",
+      "Bash(curl:*)",
+      "Bash(npx @tailwindcss/cli:*)",
+      "Bash(find:*)",
+      "Bash(test:*)",
+      "Bash(JEKYLL_ENV=production bundle exec jekyll build:*)",
+      "WebFetch(domain:dudex-zamosc.pl)"
+    ]
+  }
+}

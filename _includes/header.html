@@ -1,0 +1,99 @@
+{% assign lang = page.lang | default: site.lang %}
+{% assign t = site.data[lang] %}
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-brand-700">DudeX</span>
+        <span class="text-sm text-gray-500 hidden sm:inline">Parkiety</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="text-gray-700 hover:text-brand-600 transition-colors font-medium">
+          {{ t.nav.home }}
+        </a>
+        <a href="{% if lang == 'en' %}/en/projects/{% else %}/projekty/{% endif %}" class="text-gray-700 hover:text-brand-600 transition-colors font-medium">
+          {{ t.nav.projects }}
+        </a>
+
+        <!-- Services dropdown -->
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-brand-600 transition-colors font-medium inline-flex items-center">
+            {{ t.nav.services }}
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-2">
+              <a href="{% if lang == 'en' %}/en/services/floor-sanding/{% else %}/uslugi/cyklinowanie-podlog/{% endif %}" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600">
+                {{ t.services.sanding.title }}
+              </a>
+              <a href="{% if lang == 'en' %}/en/services/varnishing/{% else %}/uslugi/lakierowanie/{% endif %}" class="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600">
+                {{ t.services.varnishing.title }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="{% if lang == 'en' %}/en/contact/{% else %}/kontakt/{% endif %}" class="text-gray-700 hover:text-brand-600 transition-colors font-medium">
+          {{ t.nav.contact }}
+        </a>
+
+        <!-- Language switcher -->
+        {% if page.alternate_url %}
+        <a href="{{ page.alternate_url }}" class="text-sm font-medium text-brand-600 border border-brand-600 rounded px-3 py-1 hover:bg-brand-600 hover:text-white transition-colors" aria-label="{% if lang == 'pl' %}Switch to English{% else %}Przełącz na polski{% endif %}">
+          {{ t.nav.language }}
+        </a>
+        {% else %}
+        <a href="{{ t.nav.language_url }}" class="text-sm font-medium text-brand-600 border border-brand-600 rounded px-3 py-1 hover:bg-brand-600 hover:text-white transition-colors" aria-label="{% if lang == 'pl' %}Switch to English{% else %}Przełącz na polski{% endif %}">
+          {{ t.nav.language }}
+        </a>
+        {% endif %}
+      </div>
+
+      <!-- Mobile menu button -->
+      <button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-brand-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <span class="sr-only">Open menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="pb-4 space-y-1">
+        <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="block py-2 px-3 text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-md font-medium">
+          {{ t.nav.home }}
+        </a>
+        <a href="{% if lang == 'en' %}/en/projects/{% else %}/projekty/{% endif %}" class="block py-2 px-3 text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-md font-medium">
+          {{ t.nav.projects }}
+        </a>
+        <a href="{% if lang == 'en' %}/en/services/floor-sanding/{% else %}/uslugi/cyklinowanie-podlog/{% endif %}" class="block py-2 px-3 text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-md font-medium pl-6">
+          {{ t.services.sanding.title }}
+        </a>
+        <a href="{% if lang == 'en' %}/en/services/varnishing/{% else %}/uslugi/lakierowanie/{% endif %}" class="block py-2 px-3 text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-md font-medium pl-6">
+          {{ t.services.varnishing.title }}
+        </a>
+        <a href="{% if lang == 'en' %}/en/contact/{% else %}/kontakt/{% endif %}" class="block py-2 px-3 text-gray-700 hover:bg-brand-50 hover:text-brand-600 rounded-md font-medium">
+          {{ t.nav.contact }}
+        </a>
+        <div class="pt-2 px-3">
+          {% if page.alternate_url %}
+          <a href="{{ page.alternate_url }}" class="inline-block text-sm font-medium text-brand-600 border border-brand-600 rounded px-3 py-1">
+            {{ t.nav.language }}
+          </a>
+          {% else %}
+          <a href="{{ t.nav.language_url }}" class="inline-block text-sm font-medium text-brand-600 border border-brand-600 rounded px-3 py-1">
+            {{ t.nav.language }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

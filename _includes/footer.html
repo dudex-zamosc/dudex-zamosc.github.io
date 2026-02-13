@@ -1,0 +1,104 @@
+{% assign lang = page.lang | default: site.lang %}
+{% assign t = site.data[lang] %}
+
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Company info -->
+      <div>
+        <span class="text-2xl font-bold text-white">DudeX</span>
+        <span class="text-sm text-gray-400 ml-1">Parkiety</span>
+        <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+          {{ t.footer.description }}
+        </p>
+        <div class="mt-4 space-y-2 text-sm">
+          <p>
+            <a href="tel:{{ t.contact.phone | replace: ' ', '' }}" class="hover:text-white transition-colors">
+              {{ t.contact.phone }}
+            </a>
+          </p>
+          <p>
+            <a href="mailto:{{ t.contact.email }}" class="hover:text-white transition-colors">
+              {{ t.contact.email }}
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Services links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{{ t.footer.services_title }}</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="{% if lang == 'en' %}/en/services/floor-sanding/{% else %}/uslugi/cyklinowanie-podlog/{% endif %}" class="hover:text-white transition-colors">
+              {{ t.services.sanding.title }}
+            </a>
+          </li>
+          <li>
+            <a href="{% if lang == 'en' %}/en/services/varnishing/{% else %}/uslugi/lakierowanie/{% endif %}" class="hover:text-white transition-colors">
+              {{ t.services.varnishing.title }}
+            </a>
+          </li>
+          <li>
+            <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}#uslugi" class="hover:text-white transition-colors">
+              {{ t.services.floors.title }}
+            </a>
+          </li>
+          <li>
+            <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}#uslugi" class="hover:text-white transition-colors">
+              {{ t.services.stairs.title }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Cities links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{{ t.footer.cities_title }}</h3>
+        <ul class="space-y-2 text-sm">
+          {% for city in site.data.cities limit:8 %}
+          <li>
+            <a href="{% if lang == 'en' %}/en/cities/{{ city.slug }}/{% else %}/miasta/{{ city.slug }}/{% endif %}" class="hover:text-white transition-colors">
+              {% if lang == 'en' %}{{ city.name_en }}{% else %}{{ city.name_pl }}{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Useful links -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">{{ t.footer.links_title }}</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="{% if lang == 'en' %}/en/{% else %}/{% endif %}" class="hover:text-white transition-colors">
+              {{ t.nav.home }}
+            </a>
+          </li>
+          <li>
+            <a href="{% if lang == 'en' %}/en/projects/{% else %}/projekty/{% endif %}" class="hover:text-white transition-colors">
+              {{ t.nav.projects }}
+            </a>
+          </li>
+          <li>
+            <a href="{% if lang == 'en' %}/en/contact/{% else %}/kontakt/{% endif %}" class="hover:text-white transition-colors">
+              {{ t.nav.contact }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ t.footer.copyright }}</p>
+      <p class="mt-2 sm:mt-0">
+        {% if lang == 'en' %}
+        Professional carpentry services in Poland
+        {% else %}
+        Profesjonalne usługi parkieciarskie w całej Polsce
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "./photoswipe.css";
+
+@theme {
+  --color-brand-50: #faf5f0;
+  --color-brand-100: #f0e4d4;
+  --color-brand-200: #e0c7a5;
+  --color-brand-300: #cda46f;
+  --color-brand-400: #bf8847;
+  --color-brand-500: #b3742f;
+  --color-brand-600: #9a5d27;
+  --color-brand-700: #7d4622;
+  --color-brand-800: #683a22;
+  --color-brand-900: #593220;
+  --color-brand-950: #331910;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active navigation link */
+.nav-link-active {
+  color: var(--color-brand-600);
+  border-bottom: 2px solid var(--color-brand-600);
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.gallery-grid a img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid a:hover img {
+  transform: scale(1.05);
+}

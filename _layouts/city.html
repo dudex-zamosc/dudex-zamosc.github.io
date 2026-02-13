@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign t = site.data[current_lang] %}
+
+<article>
+  <!-- City Hero -->
+  <section class="bg-brand-50 py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2">
+          <li><a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="hover:text-brand-600">{{ t.nav.home }}</a></li>
+          <li><span class="mx-1">/</span></li>
+          <li class="text-gray-800 font-medium">{{ page.title }}</li>
+        </ol>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{{ page.title }}</h1>
+      <p class="text-lg text-gray-600 max-w-2xl">{{ page.subtitle }}</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-brand-600">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Services in this city -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+        {% if page.lang == 'en' %}Our services in {{ page.city_name }}{% else %}Nasze usługi w mieście {{ page.city_name }}{% endif %}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">{{ t.services.floors.title }}</h3>
+          <p class="text-gray-600">{{ t.services.floors.description }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">{{ t.services.stairs.title }}</h3>
+          <p class="text-gray-600">{{ t.services.stairs.description }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">{{ t.services.sanding.title }}</h3>
+          <p class="text-gray-600">{{ t.services.sanding.description }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">{{ t.services.varnishing.title }}</h3>
+          <p class="text-gray-600">{{ t.services.varnishing.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-brand-700 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+        {% if page.lang == 'en' %}Need a carpenter in {{ page.city_name }}?{% else %}Szukasz parkieciarza w mieście {{ page.city_name }}?{% endif %}
+      </h2>
+      <p class="text-brand-100 mb-8 text-lg">
+        {% if page.lang == 'en' %}Contact us for a free estimate. We serve {{ page.city_name }} and the surrounding area.{% else %}Skontaktuj się z nami, aby otrzymać bezpłatną wycenę. Obsługujemy {{ page.city_name }} i okolice.{% endif %}
+      </p>
+      <a href="{% if page.lang == 'en' %}/en/contact/{% else %}/kontakt/{% endif %}" class="inline-block bg-white text-brand-700 font-semibold px-8 py-3 rounded-lg hover:bg-brand-50 transition-colors">
+        {{ t.contact.form.submit | default: "Skontaktuj się" }}
+      </a>
+    </div>
+  </section>
+</article>
+
+<!-- JSON-LD for City page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ site.title }} — {{ page.city_name }}",
+  "description": "{{ page.seo_description | escape }}",
+  "url": "{{ page.url | absolute_url }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ page.city_name }}",
+    "addressCountry": "PL"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "{{ page.city_name }}"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "{{ t.services.floors.title }}"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "{{ t.services.stairs.title }}"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "{{ t.services.sanding.title }}"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "{{ t.services.varnishing.title }}"
+      }
+    }
+  ]
+}
+</script>

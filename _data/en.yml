@@ -1,0 +1,113 @@
+# Navigation
+nav:
+  home: "Home"
+  projects: "Projects"
+  services: "Services"
+  contact: "Contact"
+  cities: "Cities"
+  language: "PL"
+  language_url: "/"
+
+# Hero
+hero:
+  title: "Professional Carpentry Services"
+  subtitle: "Stairs, hardwood floors, sanding and varnishing"
+  cta: "View our projects"
+  cta_url: "/en/projects/"
+
+# About
+about:
+  title: "About Us"
+  description: "DudeX Parkiety is a company with many years of experience in the carpentry industry. We specialize in the production and installation of wooden stairs and floors. Every project is treated individually, ensuring the highest quality of workmanship and customer satisfaction."
+  experience: "Years of experience"
+  projects_done: "Completed projects"
+  satisfaction: "Satisfied customers"
+
+# Services
+services:
+  title: "Our Services"
+  subtitle: "We offer comprehensive carpentry services"
+  floors:
+    title: "Hardwood Floors"
+    description: "Installation of hardwood floors using the highest quality materials. Parquet, engineered wood, solid wood — we'll select the optimal solution for your interior."
+  stairs:
+    title: "Wooden Stairs"
+    description: "We design and build custom wooden stairs. Straight, spiral, winder — every project is executed with attention to every detail."
+  sanding:
+    title: "Floor Sanding"
+    description: "Professional sanding of hardwood floors and parquet. We restore the shine to old floors using modern dust-free equipment."
+    url: "/en/services/floor-sanding/"
+  varnishing:
+    title: "Varnishing"
+    description: "Varnishing and oiling of hardwood floors. We use top-quality products that provide lasting protection and a beautiful appearance."
+    url: "/en/services/varnishing/"
+
+# Why us
+why_us:
+  title: "Why Choose Us?"
+  subtitle: "Choose DudeX Parkiety for guaranteed professional execution"
+  reasons:
+    - title: "Experience"
+      description: "Years of market presence and hundreds of completed projects guarantee quality and professionalism."
+      icon: "shield-check"
+    - title: "Quality Materials"
+      description: "We work exclusively with trusted wood suppliers, ensuring the highest quality materials."
+      icon: "cube"
+    - title: "Individual Approach"
+      description: "Every project is treated individually, adapting to the needs and expectations of the client."
+      icon: "user"
+    - title: "Punctuality"
+      description: "We meet agreed deadlines, respecting our clients' time."
+      icon: "clock"
+    - title: "Warranty"
+      description: "We provide a warranty on every project, giving confidence in the durability of our work."
+      icon: "document-check"
+    - title: "Free Estimate"
+      description: "We offer free estimates and consultation, helping you choose the optimal solution."
+      icon: "calculator"
+
+# Recent projects
+recent_projects:
+  title: "Our Recent Projects"
+  subtitle: "See selected projects we have completed"
+  see_all: "View all projects"
+  see_all_url: "/en/projects/"
+
+# Contact
+contact:
+  title: "Contact"
+  subtitle: "Get in touch with us"
+  phone: "+48 123 456 789"
+  email: "kontakt@dudex.pl"
+  address: "ul. Przykładowa 10, 00-001 Warsaw, Poland"
+  form:
+    name: "Full name"
+    email: "Email address"
+    phone: "Phone"
+    message: "Message"
+    submit: "Send message"
+  hours:
+    title: "Business Hours"
+    weekdays: "Monday - Friday: 8:00 AM - 6:00 PM"
+    saturday: "Saturday: 9:00 AM - 2:00 PM"
+    sunday: "Sunday: Closed"
+
+# Footer
+footer:
+  description: "DudeX Parkiety — professional carpentry services. Stairs, floors, sanding and varnishing."
+  services_title: "Services"
+  cities_title: "Cities We Serve"
+  links_title: "Useful Links"
+  copyright: "DudeX Parkiety. All rights reserved."
+
+# Projects page
+projects_page:
+  title: "Our Projects"
+  subtitle: "Gallery of completed projects"
+  description: "Browse our projects. Each one is a story of individual approach and commitment to the highest quality."
+
+# 404
+not_found:
+  title: "Page Not Found"
+  description: "Sorry, the page you are looking for does not exist."
+  back_home: "Back to homepage"

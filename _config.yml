@@ -1,0 +1,59 @@
+title: "DudeX Parkiety"
+description: "Profesjonalne usługi parkieciarskie - schody, podłogi, cyklinowanie i lakierowanie"
+url: "https://dudex.pl"
+baseurl: ""
+
+# Default language
+lang: pl
+languages: [pl, en]
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Sass
+sass:
+  style: compressed
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projekty/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: pl
+      layout: page
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: page
+  - scope:
+      type: "projects"
+    values:
+      layout: project
+      lang: pl
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - CLAUDE.md
+  - README.md
+  - tailwind.config.js
+  - postcss.config.js
+  - vendor

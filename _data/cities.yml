@@ -1,0 +1,59 @@
+- slug: warszawa
+  name_pl: Warszawa
+  name_en: Warsaw
+  region_pl: mazowieckie
+  region_en: Masovia
+
+- slug: krakow
+  name_pl: Kraków
+  name_en: Krakow
+  region_pl: małopolskie
+  region_en: Lesser Poland
+
+- slug: wroclaw
+  name_pl: Wrocław
+  name_en: Wroclaw
+  region_pl: dolnośląskie
+  region_en: Lower Silesia
+
+- slug: poznan
+  name_pl: Poznań
+  name_en: Poznan
+  region_pl: wielkopolskie
+  region_en: Greater Poland
+
+- slug: gdansk
+  name_pl: Gdańsk
+  name_en: Gdansk
+  region_pl: pomorskie
+  region_en: Pomerania
+
+- slug: lodz
+  name_pl: Łódź
+  name_en: Lodz
+  region_pl: łódzkie
+  region_en: Lodz Voivodeship
+
+- slug: katowice
+  name_pl: Katowice
+  name_en: Katowice
+  region_pl: śląskie
+  region_en: Silesia
+
+- slug: lublin
+  name_pl: Lublin
+  name_en: Lublin
+  region_pl: lubelskie
+  region_en: Lublin Voivodeship
+
+- slug: szczecin
+  name_pl: Szczecin
+  name_en: Szczecin
+  region_pl: zachodniopomorskie
+  region_en: West Pomerania
+
+- slug: bydgoszcz
+  name_pl: Bydgoszcz
+  name_en: Bydgoszcz
+  region_pl: kujawsko-pomorskie
+  region_en: Kuyavia-Pomerania

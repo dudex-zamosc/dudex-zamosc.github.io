@@ -1,0 +1,113 @@
+# Navigation
+nav:
+  home: "Strona główna"
+  projects: "Realizacje"
+  services: "Usługi"
+  contact: "Kontakt"
+  cities: "Miasta"
+  language: "EN"
+  language_url: "/en/"
+
+# Hero
+hero:
+  title: "Profesjonalne usługi parkieciarskie"
+  subtitle: "Schody, podłogi drewniane, cyklinowanie i lakierowanie"
+  cta: "Zobacz nasze realizacje"
+  cta_url: "/projekty/"
+
+# About
+about:
+  title: "O nas"
+  description: "DudeX Parkiety to firma z wieloletnim doświadczeniem w branży parkieciarskiej. Specjalizujemy się w produkcji i montażu schodów drewnianych oraz podłóg. Każde zlecenie traktujemy indywidualnie, dbając o najwyższą jakość wykonania i zadowolenie klienta."
+  experience: "Lata doświadczenia"
+  projects_done: "Zrealizowanych projektów"
+  satisfaction: "Zadowolonych klientów"
+
+# Services
+services:
+  title: "Nasze usługi"
+  subtitle: "Oferujemy kompleksowe usługi parkieciarskie"
+  floors:
+    title: "Podłogi drewniane"
+    description: "Montaż podłóg drewnianych z najwyższej jakości materiałów. Parkiet, deska barlinecka, deska warstwowa — dobierzemy optymalne rozwiązanie do Twojego wnętrza."
+  stairs:
+    title: "Schody drewniane"
+    description: "Projektujemy i wykonujemy schody drewniane na wymiar. Schody proste, kręcone, zabiegowe — każdy projekt realizujemy z dbałością o każdy detal."
+  sanding:
+    title: "Cyklinowanie podłóg"
+    description: "Profesjonalne cyklinowanie podłóg drewnianych i parkietów. Przywracamy blask starym podłogom, stosując nowoczesny sprzęt bezpyłowy."
+    url: "/uslugi/cyklinowanie-podlog/"
+  varnishing:
+    title: "Lakierowanie"
+    description: "Lakierowanie i olejowanie podłóg drewnianych. Stosujemy produkty najwyższej jakości, które zapewniają trwałą ochronę i piękny wygląd."
+    url: "/uslugi/lakierowanie/"
+
+# Why us
+why_us:
+  title: "Dlaczego my?"
+  subtitle: "Wybierz DudeX Parkiety i zyskaj pewność profesjonalnej realizacji"
+  reasons:
+    - title: "Doświadczenie"
+      description: "Wieloletnia obecność na rynku i setki zrealizowanych projektów to gwarancja jakości i profesjonalizmu."
+      icon: "shield-check"
+    - title: "Jakość materiałów"
+      description: "Współpracujemy wyłącznie ze sprawdzonymi dostawcami drewna, zapewniając najwyższą jakość materiałów."
+      icon: "cube"
+    - title: "Indywidualne podejście"
+      description: "Każdy projekt traktujemy indywidualnie, dostosowując się do potrzeb i oczekiwań klienta."
+      icon: "user"
+    - title: "Terminowość"
+      description: "Dotrzymujemy ustalonych terminów, szanując czas naszych klientów."
+      icon: "clock"
+    - title: "Gwarancja"
+      description: "Na każdą naszą realizację udzielamy gwarancji, dając pewność trwałości wykonanej pracy."
+      icon: "document-check"
+    - title: "Bezpłatna wycena"
+      description: "Oferujemy bezpłatną wycenę i doradztwo, pomagając dobrać optymalne rozwiązanie."
+      icon: "calculator"
+
+# Recent projects
+recent_projects:
+  title: "Nasze ostatnie realizacje"
+  subtitle: "Zobacz wybrane projekty, które zrealizowaliśmy"
+  see_all: "Zobacz wszystkie realizacje"
+  see_all_url: "/projekty/"
+
+# Contact
+contact:
+  title: "Kontakt"
+  subtitle: "Skontaktuj się z nami"
+  phone: "+48 123 456 789"
+  email: "kontakt@dudex.pl"
+  address: "ul. Przykładowa 10, 00-001 Warszawa"
+  form:
+    name: "Imię i nazwisko"
+    email: "Adres e-mail"
+    phone: "Telefon"
+    message: "Wiadomość"
+    submit: "Wyślij wiadomość"
+  hours:
+    title: "Godziny pracy"
+    weekdays: "Poniedziałek - Piątek: 8:00 - 18:00"
+    saturday: "Sobota: 9:00 - 14:00"
+    sunday: "Niedziela: Zamknięte"
+
+# Footer
+footer:
+  description: "DudeX Parkiety — profesjonalne usługi parkieciarskie. Schody, podłogi, cyklinowanie i lakierowanie."
+  services_title: "Usługi"
+  cities_title: "Obsługujemy miasta"
+  links_title: "Przydatne linki"
+  copyright: "DudeX Parkiety. Wszelkie prawa zastrzeżone."
+
+# Projects page
+projects_page:
+  title: "Nasze realizacje"
+  subtitle: "Galeria zrealizowanych projektów"
+  description: "Zapraszamy do obejrzenia naszych projektów. Każda realizacja to historia indywidualnego podejścia i dbałości o najwyższą jakość."
+
+# 404
+not_found:
+  title: "Strona nie znaleziona"
+  description: "Przepraszamy, strona której szukasz nie istnieje."
+  back_home: "Wróć na stronę główną"
